@@ -22,8 +22,13 @@ public class User {
 
     public void getInfoVolume() {
         if (myFigura != null) {
-            System.out.println(myFigura.getNameFigure() + " has properties: r = " + myFigura.getR() + "; h = " + myFigura.getH());
+            if(myFigura.getL()==0){
+             System.out.println(myFigura.getNameFigure() + " has properties: r = " + myFigura.getR()+ "; h = " + myFigura.getH());
+             System.out.println(myFigura.getNameFigure() + " has Volume: " + myFigura.V()); 
+            }else{
+            System.out.println(myFigura.getNameFigure() + " has properties: r = " + myFigura.getR() + "; h = " + myFigura.getH() + "; l = " + myFigura.getL());
             System.out.println(myFigura.getNameFigure() + " has Volume: " + myFigura.V());
+            }
         } else {
             System.out.println("There is no Figura! The Volume is 0.");
         }

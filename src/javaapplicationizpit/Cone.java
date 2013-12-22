@@ -41,4 +41,9 @@ public class Cone extends Figura{
     public double getH(){
        return h;
    }
+    
+     @Override
+     public double getL(){
+       return l;
+   } 
 }
